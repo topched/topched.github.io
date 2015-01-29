@@ -1,0 +1,124 @@
+
+#main { padding-top: 150px; }
+
+
+
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #0B486B;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header h1#logo {
+    display: inline-block;
+    height: 150px;
+    line-height: 150px;
+    margin-top: -1px;
+    float: left;
+    font-size: 60px;
+    color: #CFF09E;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 150px;
+      margin-left: 20px;
+      color: #9fdbfc;
+      font-weight: 700;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav a:hover {
+        color: white; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      height: 75px;
+      line-height: 75px;
+      font-size: 30px; }
+    header.smaller nav a {
+      line-height: 75px; }
+
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 1000px) {
+
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 95px;
+    line-height: 75px;
+    font-size: 40px;
+    text-align: center; }
+  header nav {
+    display: block;
+    float: none;
+    height: 75px;
+    text-align: center;
+    margin: 0 auto; }
+    header nav a {
+      line-height: 30px;
+      margin: 0 10px;
+      font-size:24px;
+      font-weight:400; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+
+      line-height: 40px;
+      font-size: 20px; }
+    header.smaller nav {
+      height: 20px;
+      margin-top: -25px; }
+      header.smaller nav a {
+        line-height: 20px; 
+        font-size: 14px;
+         }
+ }
+
+ @media all and (max-width: 600px){
+
+ 	header h1#logo {
+	    display: block;
+	    float: none;
+	    margin: 0 auto;
+	    height: 95px;
+	    line-height: 75px;
+	    font-size: 40px;
+	    text-align: center; }
+  	header nav {
+	    display: block;
+	    float: none;
+	    height: 75px;
+	    text-align: center;
+	    margin: 0 auto; }
+    header nav a {
+	    line-height: 30px;
+	    margin: 0 10px;
+	    font-size:14px;
+	    font-weight:400; }
+
+ }
+
+
+
