@@ -33,7 +33,8 @@ header {
     transition: all 0.3s; }
   header nav {
     display: inline-block;
-    float: right; }
+    float: right;
+    padding-right: 10px; }
     header nav a {
       line-height: 150px;
       margin-left: 20px;
@@ -60,7 +61,7 @@ header {
 
 /* =Media Queries
 -------------------------------------------------------------- */
-@media all and (max-width: 1000px) {
+@media all and (min-width: 376px) and (max-width: 1000px) {
 
   header h1#logo {
     display: block;
@@ -69,7 +70,7 @@ header {
     height: 95px;
     line-height: 75px;
     font-size: 40px;
-    text-align: center; }
+    text-align: center;}
   header nav {
     display: block;
     float: none;
@@ -96,7 +97,7 @@ header {
          }
  }
 
- @media all and (max-width: 600px){
+ @media all and (min-width: 376px) and (max-width: 600px){
 
  	header h1#logo {
 	    display: block;
@@ -105,7 +106,7 @@ header {
 	    height: 95px;
 	    line-height: 75px;
 	    font-size: 40px;
-	    text-align: center; }
+	    text-align: center;}
   	header nav {
 	    display: block;
 	    float: none;
@@ -118,6 +119,48 @@ header {
 	    font-size:14px;
 	    font-weight:400; }
 
+ }
+
+/* For iphone 3/4/5 */
+ @media all and (max-width: 375px){
+ 	header h1#logo {
+	    display: block;
+	    float: none;
+	    margin: 0 auto;
+	    height: 75px;
+	    line-height: 75px;
+	    font-size: 20px;
+	    text-align: center;
+	    }
+  	header nav {
+	    display: block;
+	    float: none;
+	    height: 75px;
+	    text-align: center;
+	    margin: 0 auto; }
+    header nav a {
+	    line-height: 30px;
+	    margin: 0 10px;
+	    font-size:12px;
+	    font-weight:400; }
+	
+	header.smaller {
+    	height: 75px; 
+    }
+    header.smaller h1#logo {
+      height:30px;
+      line-height: 30px;
+      font-size: 20px; 
+  	}
+    header.smaller nav {
+    	height: 20px;
+      line-height: 20px;
+
+       }
+      header.smaller nav a {
+        line-height: 20px; 
+        font-size: 12px;
+        }
  }
 
 
