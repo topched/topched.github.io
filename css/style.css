@@ -1,8 +1,13 @@
 
 #main { padding-top: 150px; }
 
+.center{
+  text-align: center;
+}
 
 
+/*      Header
+-------------------------------------------------------------- */
 header {
   width: 100%;
   height: 150px;
@@ -16,50 +21,60 @@ header {
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
-  transition: height 0.3s; }
-  header h1#logo {
-    display: inline-block;
-    height: 150px;
-    line-height: 150px;
-    margin-top: -1px;
-    float: left;
-    font-size: 60px;
-    color: #CFF09E;
-    font-weight: 400;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-  header nav {
-    display: inline-block;
-    float: right;
-    padding-right: 10px; }
-    header nav a {
-      line-height: 150px;
-      margin-left: 20px;
-      color: #9fdbfc;
-      font-weight: 700;
-      font-size: 18px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
-      header nav a:hover {
-        color: white; }
-  header.smaller {
-    height: 75px; }
-    header.smaller h1#logo {
-      height: 75px;
-      line-height: 75px;
-      font-size: 30px; }
-    header.smaller nav a {
-      line-height: 75px; }
+  transition: height 0.3s; 
+}
+header h1#logo {
+  display: inline-block;
+  height: 150px;
+  line-height: 150px;
+  margin-top: -1px;
+  float: left;
+  font-size: 60px;
+  color: #CFF09E;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; 
+}
+header h1 a { color: #CFF09E; }
+header h1 a:hover{
+  color: #9fdbfc;
+  text-decoration: none;
+}
+header nav {
+  display: inline-block;
+  float: right;
+  padding-right: 10px; 
+}
+header nav a {
+  line-height: 150px;
+  margin-left: 20px;
+  color: #CFF09E;
+  font-weight: 700;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; 
+}
+header nav a:hover {
+  color: #9fdbfc;
+  text-decoration: none; 
+}
+header.smaller { height: 75px; }
+header.smaller h1#logo {
+  height: 75px;
+  line-height: 75px;
+  font-size: 30px; 
+}
+header.smaller nav a { line-height: 75px; }
 
 
 
-/* =Media Queries
+/*      Media Queries
 -------------------------------------------------------------- */
 @media all and (min-width: 376px) and (max-width: 1000px) {
 
@@ -70,98 +85,103 @@ header {
     height: 95px;
     line-height: 75px;
     font-size: 40px;
-    text-align: center;}
+    text-align: center;
+  }
   header nav {
     display: block;
     float: none;
     height: 75px;
     text-align: center;
-    margin: 0 auto; }
-    header nav a {
-      line-height: 30px;
-      margin: 0 10px;
-      font-size:24px;
-      font-weight:400; }
-  header.smaller {
-    height: 75px; }
-    header.smaller h1#logo {
+    margin: 0 auto; 
+  }
+  header nav a {
+    line-height: 30px;
+    margin: 0 10px;
+    font-size:24px;
+    font-weight:400; 
+  }
+  header.smaller { height: 75px; }
+  header.smaller h1#logo {
+    line-height: 40px;
+    font-size: 20px; 
+  }
+  header.smaller nav {
+    height: 20px;
+    margin-top: -25px; 
+  }
+  header.smaller nav a {
+    line-height: 20px; 
+    font-size: 14px;
+  }
+}
 
-      line-height: 40px;
-      font-size: 20px; }
-    header.smaller nav {
-      height: 20px;
-      margin-top: -25px; }
-      header.smaller nav a {
-        line-height: 20px; 
-        font-size: 14px;
-         }
- }
+@media all and (min-width: 376px) and (max-width: 600px){
 
- @media all and (min-width: 376px) and (max-width: 600px){
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 95px;
+    line-height: 75px;
+    font-size: 40px;
+    text-align: center;
+  }
+  header nav {
+    display: block;
+    float: none;
+    height: 75px;
+    text-align: center;
+    margin: 0 auto; 
+  }
+  header nav a {
+    line-height: 30px;
+    margin: 0 10px;
+    font-size:14px;
+    font-weight:400; 
+  }
 
- 	header h1#logo {
-	    display: block;
-	    float: none;
-	    margin: 0 auto;
-	    height: 95px;
-	    line-height: 75px;
-	    font-size: 40px;
-	    text-align: center;}
-  	header nav {
-	    display: block;
-	    float: none;
-	    height: 75px;
-	    text-align: center;
-	    margin: 0 auto; }
-    header nav a {
-	    line-height: 30px;
-	    margin: 0 10px;
-	    font-size:14px;
-	    font-weight:400; }
-
- }
+}
 
 /* For iphone 3/4/5 */
- @media all and (max-width: 375px){
- 	header h1#logo {
-	    display: block;
-	    float: none;
-	    margin: 0 auto;
-	    height: 75px;
-	    line-height: 75px;
-	    font-size: 20px;
-	    text-align: center;
-	    }
-  	header nav {
-	    display: block;
-	    float: none;
-	    height: 75px;
-	    text-align: center;
-	    margin: 0 auto; }
-    header nav a {
-	    line-height: 30px;
-	    margin: 0 10px;
-	    font-size:12px;
-	    font-weight:400; }
-	
-	header.smaller {
-    	height: 75px; 
-    }
-    header.smaller h1#logo {
-      height:30px;
-      line-height: 30px;
-      font-size: 20px; 
-  	}
-    header.smaller nav {
-    	height: 20px;
-      line-height: 20px;
+@media all and (max-width: 375px){
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    text-align: center;
+  }
+  header nav {
+    display: block;
+    float: none;
+    height: 75px;
+    text-align: center;
+    margin: 0 auto; 
+  }
+  header nav a {
+    line-height: 30px;
+    margin: 0 10px;
+    font-size:12px;
+    font-weight:400; 
+  }
 
-       }
-      header.smaller nav a {
-        line-height: 20px; 
-        font-size: 12px;
-        }
- }
+  header.smaller { height: 75px; }
+  header.smaller h1#logo {
+    height:30px;
+    line-height: 30px;
+    font-size: 20px; 
+  }
+  header.smaller nav {
+    height: 20px;
+    line-height: 20px;
+  }
+  header.smaller nav a {
+    line-height: 20px; 
+    font-size: 12px;
+  }
+}
 
 
 
