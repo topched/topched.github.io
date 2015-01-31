@@ -1,8 +1,88 @@
+@font-face {
+  font-family: Bebas;
+  src: url('../fonts/BebasNeue.otf');
+}
+
+@font-face {
+  font-family: Code;
+  src: url('../fonts/CODE Bold.otf');
+}
+
+@font-face {
+  font-family: LemonYellow;
+  src: url('../fonts/LemonYellow.otf');
+}
+
+@font-face {
+  font-family: BioHand;
+  src: url('../fonts/BIO_HAND.ttf');
+}
+
+
+body { background-color: #A8DBA8; }
 
 #main { padding-top: 150px; }
 
 .center{
   text-align: center;
+}
+
+.main-info {
+  background-color: #3B8686;
+}
+
+.main-info h1 {
+  font-family: LemonYellow;
+  font-size: 80px;
+}
+
+.main-info p {
+  font-family: BioHand;
+  font-size: 20px;
+}
+
+#horizontalTab h2 {
+  font-family: Bebas;
+  font-size: 40px;
+}
+
+#horizontalTab h3 {
+  font-family: BioHand;
+  padding-top: 5px;
+}
+
+
+
+
+/*      Banner Animations
+-------------------------------------------------------------- */
+.banner img {
+  vertical-align: middle;
+  background-color: #0B486B;
+  -webkit-animation: fadeIn 1.0s linear both;
+  -moz-animation: fadeIn 1.0s linear both;
+  -o-animation: fadeIn 1.0s linear both;
+  -ms-animation: fadeIn 1.0s linear both;
+  animation: fadeIn 1.0s linear both;
+}
+
+.banner h3 {
+  -webkit-animation: fadeIn 1.0s linear both;
+  -moz-animation: fadeIn 1.0s linear both;
+  -o-animation: fadeIn 1.0s linear both;
+  -ms-animation: fadeIn 1.0s linear both;
+  animation: fadeIn 1.0s linear both;
+
+
+}
+
+.banner h2 {
+  -webkit-animation: fadeIn 1.0s linear both;
+  -moz-animation: fadeIn 1.0s linear both;
+  -o-animation: fadeIn 1.0s linear both;
+  -ms-animation: fadeIn 1.0s linear both;
+  animation: fadeIn 1.0s linear both;
+
 }
 
 
@@ -24,6 +104,7 @@ header {
   transition: height 0.3s; 
 }
 header h1#logo {
+  font-family: Bebas;
   display: inline-block;
   height: 150px;
   line-height: 150px;
@@ -49,11 +130,13 @@ header nav {
   padding-right: 10px; 
 }
 header nav a {
+  font-family: Code;
+  letter-spacing: 2px;
   line-height: 150px;
   margin-left: 20px;
   color: #CFF09E;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -68,9 +151,98 @@ header.smaller { height: 75px; }
 header.smaller h1#logo {
   height: 75px;
   line-height: 75px;
-  font-size: 30px; 
+  font-size: 40px; 
 }
-header.smaller nav a { line-height: 75px; }
+header.smaller nav a { 
+  line-height: 75px; 
+  font-size: 20px;
+}
+
+/*      Tab Content 
+-------------------------------------------------------------- */
+
+/* Tabs container */
+.r-tabs {
+
+  background-color: #0B486B;
+
+}
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  position: relative;
+  background-color: #0B486B;
+}
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+  display: inline-block;
+  padding: 10px 12px;
+
+  font-size: 18px;
+  font-family: Code;
+  color: #CFF09E;
+  letter-spacing: 1px;
+}
+
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: #0B486B;
+  text-shadow: none;
+  background-color: #A8DBA8;
+}
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+  background-color: #A8DBA8;
+}
+
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+  display: block;
+  padding: 10px;
+
+  background-color: #0B486B;
+  color: #CFF09E;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+  background-color: #CFF09E;
+  color: #0B486B;
+  text-shadow: none;
+}
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+  opacity: 0.5;
+}
+
+/*      Footer
+-------------------------------------------------------------- */
+
+.social-media-footer { 
+  background-color: #0B486B;
+  display: block;
+}
+
+.social-media-footer .fa {
+  margin: 10px 5px 10px 5px;
+  color: #CFF09E;
+}
+
+.social-media-footer .fa a:hover{
+  color: #9fdbfc;
+}
 
 
 
@@ -183,5 +355,88 @@ header.smaller nav a { line-height: 75px; }
   }
 }
 
+
+/*      Animations
+-------------------------------------------------------------- */
+@-webkit-keyframes moveUp{
+  0% {-webkit-transform: translateY(40px);}
+  100% {-webkit-transform: translateY(0px);}
+}
+@-moz-keyframes moveUp{
+  0% {-moz-transform: translateY(40px);}
+  100% {-moz-transform: translateY(0px);}
+}
+@-o-keyframes moveUp{
+  0% {-o-transform: translateY(40px);}
+  100% {-o-transform: translateY(0px);}
+}
+@-ms-keyframes moveUp{
+  0% {-ms-transform: translateY(40px);}
+  100% {-ms-transform: translateY(0px);}
+}
+@keyframes moveUp{
+  0% {transform: translateY(40px);}
+  100% {transform: translateY(0px);}
+}
+@-webkit-keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes scaleDown{
+  0% {-webkit-transform: scale(1);}
+  100% {-webkit-transform: scale(0.5);}
+}
+@-moz-keyframes scaleDown{
+  0% {-moz-transform: scale(1);}
+  100% {-moz-transform: scale(0.5);}
+}
+@-o-keyframes scaleDown{
+  0% {-o-transform: scale(1);}
+  100% {-o-transform: scale(0.5);}
+}
+@-ms-keyframes scaleDown{
+  0% {-ms-transform: scale(1);}
+  100% {-ms-transform: scale(0.5);}
+}
+@keyframes scaleDown{
+  0% {transform: scale(1);}
+  100% {transform: scale(0.5);}
+}
+@-webkit-keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-o-keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-ms-keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
 
 

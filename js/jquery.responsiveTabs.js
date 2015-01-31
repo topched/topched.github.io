@@ -18,7 +18,7 @@
         rotate: false,
         setHash: false,
         animation: 'default',
-        duration: 500,
+        duration: 550,
         scrollToAccordion: false,
         activate: function(){},
         deactivate: function(){},
