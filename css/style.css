@@ -286,6 +286,15 @@ header.smaller nav a {
     font-size: 14px;
   }
 }
+@media all and (min-width: 761px) and (max-width: 1000px) {
+
+    .r-tabs .r-tabs-nav .r-tabs-anchor {
+
+
+        font-size: 12px;
+
+    }
+}
 
 @media all and (min-width: 376px) and (max-width: 600px){
 
