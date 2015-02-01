@@ -232,7 +232,7 @@ header.smaller nav a {
 
 .social-media-footer { 
   background-color: #0B486B;
-  display: block;
+  display: block-inline;
 }
 
 .social-media-footer .fa {
@@ -289,10 +289,7 @@ header.smaller nav a {
 @media all and (min-width: 761px) and (max-width: 1000px) {
 
     .r-tabs .r-tabs-nav .r-tabs-anchor {
-
-
         font-size: 12px;
-
     }
 }
 
