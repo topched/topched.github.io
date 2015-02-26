@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Floor Coat Inc.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400|Roboto|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="favicon.ico">
+
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <header>
+        <div class="container">
+            <h1 id="logo"><a href="index.html">Floor Coat Inc.</a></h1>
+            <nav>
+            <!--<a href="">Residential</a>
+            <a href="">Commercial</a>-->
+            <a href="services.html">Services</a>
+            <a href="">Our Work</a>
+            <a href="#" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- /header -->
+
+<div id="main">
+
+<div class="contact col-md-10 col-md-offset-1 col-xs-12">
+    <div class="row">
+        <h1>Contact Us</h1>
+        <h2>Book Your Appointment Now</h2>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <span class="fa-stack fa-lg fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>  
+            </span>
+        <h3>Floorcoat@shaw.ca</h2>
+        </div>
+        <div class="col-md-5">
+            <span class="fa-stack fa-lg fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x"></i>  
+            </span>
+        <h3>780-966-3796</h2>
+        </div>
+
+
+    </div>
+    <div class="row center contact-social-icon">
+        <a class="fa-5x" href="#twitter"><i class="fa fa-twitter"></i></a>
+        <a class="fa-5x" href="#facebok"><i class="fa fa-facebook"></i></a>
+        <a class="fa-5x" href="#"><i class="fa fa-pinterest"></i></a>
+        <a class="fa-5x" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="fa-5x" href="#"><i class="fa fa-youtube"></i></a>
+
+    </div>
+
+
+
+</div>    
+
+</div>
+
+
+<!-- /Main -->
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+
+    $(document).ready(function() {
+
+        //scroll listener for nav bar
+        window.addEventListener('scroll', function(e) {
+
+            var distanceY = window.pageYOffset;
+
+            var shrinkOn = 20,
+            nav = document.querySelector("header");
+            if(distanceY > shrinkOn) {
+                //alert("hit");
+                classie.add(nav, "smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+
+        });
+    });
+    </script>
+
+</body>
+</html>

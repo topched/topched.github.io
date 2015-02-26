@@ -1,241 +1,298 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Floor Coat Inc.</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Floor Coat Inc.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
 
-<!-- Latest compiled and minified Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
-<link rel="stylesheet" href="css/style.css">
-<!--<link rel="stylesheet" href="css/jquery-ui.css">-->
-<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/jquery.kwicks.css' />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">
 
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
 
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1 id="logo"><a href="">Floor Coat Inc.</a></h1>
-        <nav>
-            <a href="">Residential</a>
-            <a href="">Commercial</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+    <div id="preloader"></div>
+
+    <header>
+        <div class="container">
+            <h1 id="logo"><a href="#">Floor Coat Inc.</a></h1>
+            <nav>
+            <!--<a href="">Residential</a>
+            <a href="">Commercial</a>-->
+            <a href="services.html">Services</a>
+            <a href="">Our Work</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
-</header><!-- /header -->
+</header>
+<!-- /header -->
 
 <div id="main">
+    <!-- Slider -->
 
+    <div id="slider" class="sl-slider-wrapper sl-slider-home col-md-10 col-md-offset-1 col-xs-12">
 
-    <!-- Banner -->
-    <div id="horizontalTab">
+        <div class="sl-slider">
 
-        <div id="poly" class="banner">
-            <div class="row">
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/poly-1.JPG" alt="" />
+            <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="row">
+                        <div class="col-xl-4 col-xl-offset-1 col-md-5 col-md-offset-1 col-xs-7 col-xs-offset-2 banner-1">
+                            <h1>Unique Flooring Solutions</h1>
+                            <h2>Create Your Own Space</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-4 center">
-                    <h2>Polyaspartic Coating</h2>
-                    <h3>Durable</h3>
-                    <h3>Non-slipping</h3>
-                    <h3>Choose your pattern and color</h3>
-                    <h3>Residential & Commercial</h3>
+            </div>
+
+            <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="row">
+                        <div class="col-xl-4 col-xl-offset-1 col-md-5 col-md-offset-1 col-xs-7 col-xs-offset-2 banner-2">
+                            <h1>Creative Ideas</h1>
+                            <h2>Endless Possibilities</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/poly-2.JPG" alt="" />
+            </div>
+
+            <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="21" data-slice2-rotation="3" data-slice1-scale="1" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="row">
+                        <div class="col-xl-4 col-xl-offset-1 col-md-5 col-md-offset-1 col-xs-7 col-xs-offset-2 banner-3">
+                            <h1>Custom Options</h1>
+                            <h2>Show Off Your Logo In Style</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="epoxy" class="banner">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <img class="img-responsive img-thumbnail" src="images/banner/metallic-epoxy.JPG" alt="" />
-                    </div>
-                    <div class="col-xs-4 center">
-                        <h2>Epoxy Coating</h2>
-                        <h3>Durable</h3>
-                        <h3>Custom Colors & Patterns</h3>
-                        <h3>Endless Possibilities</h3>
-                        <h3>Residential & Commercial</h3>
-                    </div>
-                    <div class="col-xs-4">
-                        <img class="img-responsive img-thumbnail" src="images/banner/metallic-epoxy-2.JPG" alt="" />
-                    </div>
-                </div>
-
-        </div>
-
-        <div id="grind" class="banner">
-            <div class="row">
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/gp-01.JPG" alt="" />
-                </div>
-                <div class="col-xs-4 center">
-                    <h2>Grind & Polished Concrete</h2>
-                    <h3>Salt & Pepper</h3>
-                    <h3>Full Exposure</h3>
-                    <h3>Residential & Commercial</h3>
-                </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/gp-02.JPG" alt="" />
-                </div>
-            </div>
-        </div>
-
-        <div id="custom" class="banner">
-            <div class="row">
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/custom-pool-poly.JPG" alt="" />
-                </div>
-                <div class="col-xs-4 center">
-                    <h2>Custom Options</h2>
-                    <h3>Logos</h3>
-                    <h3>Pools</h3>
-                    <h3>Plus More...</h3>
-                </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="images/banner/custom-logo.JPG" alt="" />
-                </div>
-            </div>
-        </div>        
-
-        <ul class="center">
-            <li><a href="#poly">Polyaspartic Coating</a></li>
-            <li><a href="#epoxy">Epoxy Coating</a></li>
-            <li><a href="#grind">Grind & Polished Concrete</a></li>
-            <li><a href="#custom">Custom Options</a></li>
-        </ul>
-
+        <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+        </nav>
     </div>
-    <!-- /Banner -->
+
+    <!-- Slider -->
 
     <!-- Main Info -->
-    <div class="main-info">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 center">
-                <h1>Welcome To Floor Coat Inc.</h1>
+    <div class="main-info col-md-10 col-md-offset-1 col-xs-12">
+        <div class="row col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 wow animated fadeInUp">
+            <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and have tested many different products in numerous applications so we know what works.</p>
+        </div>
+    </div>
+    <!-- /Main Info -->
+
+    <!-- What we specialize in -->
+    <div class="specialize col-md-10 col-md-offset-1 col-xs-12">
+
+    <div class="row">
+        <h1 class="col-xs-10 col-xs-offset-1 headline center wow animated rollIn">
+            <span>What We Specialize In</span>
+        </h1>
+    </div>
+
+
+        <!-- specialize poly -->
+        <div class="row wow animated fadeInUp" data-wow-delay="0.3s">
+            <h2 class="headline headline-margin wow animated rollIn container-fluid">
+                <span>Polyaspartic Chip & Quartz Floor Coating</span>
+            </h2>
+            <div class="row col-xs-12">
+                <div class="col-md-5">
+                    <ul class='kwicks kwicks-home kwicks-horizontal'>
+                        <li><img src="images/special/poly1.jpg" alt="" /></li>
+                        <li><img src="images/special/poly2.jpg" alt="" />  </li>
+                        <li><img src="images/special/poly3.jpg" alt="" />  </li>
+                    </ul>                
+                        
+                </div>
+                <div class="col-md-7">
+                    <div class="special-align">
+                        <p class="container-fluid">We can improve your damaged, slippery, ugly, and hard to clean concrete floor. A concrete floor covered with our polyaspartic chip or quartz coating looks great, adds life to your floor, and is easy to maintain. With the high flexibility of the polyaspartic coating it withstands abuse and last longer than anything else, making it ideal for both residential and commercial application.</p>
+                        <a href="#" class="row btn-lg more-info-btn col-xs-4 col-xs-offset-4 center" role="button">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 gap">
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
-                <p>Floor Coat Inc. is a family run business, which means every job is approached with pure professionalism. We are a group of perfectionists who take great pride in our work so you can trust that you are getting our best effort in every job we do. What sets us aside from everyone else is we have over 60 years of contracting experience, we have unique pieces of equipment, and tested many different products in numerous applications so we know what works.</p>
+        </div>
+
+        <!-- specialize epoxy -->
+        <div class="row wow animated fadeInUp" data-wow-delay="0.3s">
+            <h2 class="headline headline-margin wow animated rollIn container-fluid">
+                <span>Epoxy Floor Coating</span>
+            </h2>
+            <div class="row col-xs-12">
+                <div class="col-md-5">
+                    <ul class='kwicks kwicks-home kwicks-horizontal'>
+                        <li><img src="images/special/epoxy1.png" alt="" /></li>
+                        <li><img src="images/special/epoxy2.jpg" alt="" />  </li>
+                        <li><img src="images/special/epoxy3.png" alt="" />  </li>
+                    </ul>  
+
+                </div>
+                <div class="col-md-7">
+                    <div class="special-align">
+                        <p class="container-fluid">Epoxy flooring is a unique way to turn ordinary concrete floor into a functional work of art. Decorative epoxy finishes offer a unique rich look with colour depth making it desirable for any residential or commercial application.</p>
+                        <a href="#" class="btn-lg more-info-btn col-xs-4 col-xs-offset-4 center" role="button">Learn More</a>
+                    </div>          
+                </div>
             </div>
-    </div> 
+        </div>
 
+        <!-- specialize grind & polish -->
+        <div class="row wow animated fadeInUp" data-wow-delay="0.3s">
+            <h2 class="headline headline-margin wow animated rollIn container-fluid">
+                <span>Grind & Polished Concrete</span>
+            </h2>
+            <div class="row col-xs-12">
+                <div class="col-md-5">
+                    <ul class='kwicks kwicks-home kwicks-horizontal'>
+                        <li><img src="images/special/gp1.png" alt="" /></li>
+                        <li><img src="images/special/gp2.jpg" alt="" />  </li>
+                        <li><img src="images/special/gp3.jpg" alt="" />  </li>
+                    </ul> 
+                </div>
+                <div class="col-md-7">
+                    <div class="special-align">
+                        <p class="container-fluid">Concrete has always been famous for its durability, but recently it’s becoming the most popular decorative flooring option because its rich look and cost-saving features. We offer industry leading technology and techniques including many pieces of machinery for all sizes of any commercial or residential floors.</p>
+                        <a href="#" class="btn-lg more-info-btn col-xs-4 col-xs-offset-4 center" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-    <!-- Footer -->
-    <div class="social-media-footer">
-
-    
-        <div class="center">
-            <a class="fa-3x" href="#twitter">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a class="fa-3x" href="#facebok">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a class="fa-3x" href="#">
-                <i class="fa fa-pinterest"></i>
-            </a>
-            <a class="fa-3x" href="#">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a class="fa-3x" href="#">
-                <i class="fa fa-youtube"></i>
-            </a>
-
-            <a class="fa-3x pull-right" href="#">
-                <i class="fa fa-arrow-up"></i>
-            </a>
+        <!-- specialize custom -->
+        <div class="row wow animated fadeInUp" data-wow-delay="0.3s">
+            <h2 class="headline headline-margin wow animated rollIn container-fluid">
+                <span>Custom Options</span>
+            </h2>
+            <div class="row col-xs-12">
+                <div class="col-md-5">
+                    <ul class='kwicks kwicks-home kwicks-horizontal'>
+                        <li><img src="images/special/custom1.jpg" alt="" /></li>
+                        <li><img src="images/special/custom3.jpg" alt="" />  </li>
+                        <li><img src="images/special/custom2.jpg" alt="" />  </li>
+                    </ul> 
+                </div>
+                <div class="col-md-7">
+                    <div class="special-align">
+                        <p class="container-fluid">Choose your colors, create your own custom pattern, or even combine different finishes. Add your logo to show off your brand in style. Whether it be residential or commercial, the possibilities are endless with Floor Coat on your side.</p>
+                        <a href="#" class="btn-lg more-info-btn col-xs-4 col-xs-offset-4 center" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        
-
-
 
     </div>
- 
-    <!-- /Footer -->
+    <!-- /What we specialize in -->
+
+</div>
+<!-- /Main -->
 
 
-    <!-- Responsive Tabs JS -->
-    <script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
+<!-- Footer -->
+<div class="row col-xs-10 col-xs-offset-1 social-media-footer">
+    <div class="center">
+        <a class="fa-3x" href="#twitter"><i class="fa fa-twitter"></i></a>
+        <a class="fa-3x" href="#facebok"><i class="fa fa-facebook"></i></a>
+        <a class="fa-3x" href="#"><i class="fa fa-pinterest"></i></a>
+        <a class="fa-3x" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="fa-3x" href="#"><i class="fa fa-youtube"></i></a>
+        <!--<a class="fa-3x pull-right" href="#"><i class="fa fa-arrow-up"></i></a>-->
+    </div>
+</div>
+<!-- /Footer -->
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#horizontalTab').responsiveTabs({
-                rotate: true,
-                startCollapsed: 'accordion',
-                collapsible: 'accordion',
-                setHash: true,
-                activate: function(e, tab) {
-                    $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-                },
-                activateState: function(e, state) {
-                    //console.log(state);
-                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/jquery.kwicks.js"></script>
+<script type='text/javascript' src="js/jquery.ba-cond.min.js"></script>
+<script type='text/javascript' src="js/jquery.slitslider.js"></script>
+<script type='text/javascript' src="js/wow.min.js"></script>
+<script type="text/javascript">
+
+    $(window).load(function(){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+
+    $(document).ready(function() {
+
+        //scroll listener for nav bar
+        window.addEventListener('scroll', function(e) {
+
+            var distanceY = window.pageYOffset;
+
+            var shrinkOn = 20,
+            nav = document.querySelector("header");
+            if(distanceY > shrinkOn) {
+                //alert("hit");
+                classie.add(nav, "smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
                 }
-            });
-
-            $('#start-rotation').on('click', function() {
-                $('#horizontalTab').responsiveTabs('startRotation', 1000);
-            });
-            $('#stop-rotation').on('click', function() {
-                $('#horizontalTab').responsiveTabs('stopRotation');
-            });
-            $('#start-rotation').on('click', function() {
-                $('#horizontalTab').responsiveTabs('active');
-            });
-            $('.select-tab').on('click', function() {
-                $('#horizontalTab').responsiveTabs('activate', $(this).val());
-            });
+            }
 
         });
 
-        $(document).ready(function() {
+        //initialize wow
+        new WOW().init();
 
-            window.addEventListener('scroll', function(e) {
+        //image slider
+        var Slider = (function() {
 
-                var distanceY = window.pageYOffset;
+            var $navArrows = $( '#nav-arrows' ),
+            slitslider = $( '#slider' ).slitslider( {
+                autoplay : true
+            } ),
 
-                var shrinkOn = 150,
-                nav = document.querySelector("header");
-                if(distanceY > shrinkOn) {
-                    //alert("hit");
-                    classie.add(nav, "smaller");
-                } else {
-                    if (classie.has(nav,"smaller")) {
-                        classie.remove(nav,"smaller");
-                    }
-                }
+            init = function() {
+                initEvents();
+            },
+            initEvents = function() {
+                $navArrows.children( ':last' ).on( 'click', function() {
+                    slitslider.next();
+                    return false;
+                });
 
+                $navArrows.children( ':first' ).on( 'click', function() {
+                    slitslider.previous();
+                    return false;
+                });
+            };
+
+            return { init : init };
+
+        })();
+
+        Slider.init();
+
+        $(function() {
+            $('.kwicks').kwicks({
+                behavior: 'menu',
+                maxSize: '80%',
+                spacing: 5
             });
         });
 
-    </script>
+    });
 
+</script>
 
-
-
-
-
-	</body>
+</body>
 </html>
 
