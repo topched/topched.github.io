@@ -1,9 +1,6 @@
 /* RGB CODE = 51 122 183 */
 /* RGB CODE = 232 133 0 */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400|Roboto|Roboto+Slab:300,400);
-@font-face {
-  font-family: Bebas;
-  src: url("../fonts/BebasNeue.otf"); }
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400|Lustria|Lato:300,400,700|Roboto+Slab:300,400);
 /* Pre loader */
 #preloader {
   position: fixed;
@@ -79,17 +76,17 @@ body {
   text-align: center;
   padding-bottom: 50px;
   color: #F0FFF0;
-  font-family: 'Roboto Slab', sans-serif; }
+  font-family: 'Lato', sans-serif; }
   .contact h1 {
     font-size: 60px;
     font-weight: 700; }
   .contact h2 {
     font-size: 46px;
     margin-bottom: 50px;
-    font-weight: 300; }
+    font-weight: 400; }
   .contact h3 {
     font-size: 40px;
-    font-weight: 400; }
+    font-weight: 300; }
   .contact .fa-envelope {
     color: #F0FFF0; }
   .contact .fa-phone {
@@ -135,15 +132,20 @@ body {
   background-color: #F0FFF0;
   padding-top: 45px; }
   .main-info p {
-    font-family: 'Ubuntu', serrif;
+    font-family: 'Lustria', serrif;
     font-size: 24px;
     color: #2e2e2e;
-    font-weight: 300; }
+    padding: 0 25px 0 25px;
+    text-align: justify; }
   .main-info p::first-letter {
     font-size: 60px;
     color: #337ab7;
     font-weight: 700;
     line-height: 0em; }
+
+.home-icon-deco {
+  color: #E88500;
+  text-transform: uppercase; }
 
 .kwicks-home {
   height: 400px; }
@@ -157,19 +159,18 @@ body {
   background-color: #F0FFF0;
   padding-bottom: 40px; }
   .specialize h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #337ab7;
     font-size: 42px;
     font-weight: 700; }
   .specialize h2 {
     color: #337ab7;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400; }
   .specialize p {
-    font-family: 'Ubuntu', serrif;
+    font-family: 'Lustria', serrif;
     font-size: 20px;
-    text-align: justify;
-    font-weight: 300; }
+    text-align: justify; }
 
 .more-info-btn {
   color: white;
@@ -204,7 +205,7 @@ header {
   transition: height 0.3s; }
 
 header h1#logo {
-  font-family: Bebas;
+  font-family: 'Lato', sans-serif;
   display: inline-block;
   height: 150px;
   line-height: 150px;
@@ -236,11 +237,11 @@ header nav {
 
 header nav a {
   color: #337ab7;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 150px;
   margin-left: 20px;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 26px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -270,7 +271,8 @@ header.smaller nav a {
   overflow: hidden; }
 
 .sl-slider-home {
-  height: 400px; }
+  height: 400px;
+  font-family: 'Roboto Slab', sans-serif; }
 
 .sl-slider-service {
   height: 400px; }
@@ -357,7 +359,8 @@ header.smaller nav a {
   top: 90%;
   width: 40px;
   height: 40px;
-  border: 8px solid #ddd;
+  border: 8px solid #F0FFF0;
+  opacity: 0.8;
   text-indent: -90000px;
   margin-top: -40px;
   cursor: pointer;
@@ -368,7 +371,8 @@ header.smaller nav a {
   transform: rotate(45deg); }
 
 .nav-arrows span:hover {
-  border-color: rgba(150, 150, 150, 0.9); }
+  border-color: #337ab7;
+  opacity: 0.7; }
 
 .nav-arrows span.nav-arrow-prev {
   left: 5%;
@@ -421,7 +425,7 @@ header.smaller nav a {
   background-size: cover; }
 
 .banner-1 {
-  color: white;
+  color: #F0FFF0;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center; }
@@ -448,7 +452,7 @@ header.smaller nav a {
   background-size: cover; }
 
 .banner-2 {
-  color: white;
+  color: #F0FFF0;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center; }
@@ -475,7 +479,7 @@ header.smaller nav a {
   background-size: cover; }
 
 .banner-3 {
-  color: white;
+  color: #F0FFF0;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center; }

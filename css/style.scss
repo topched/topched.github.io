@@ -22,14 +22,7 @@ $lightBlue: #2582B7;
 $orangeIsh: #E88500; /* RGB CODE = 232 133 0 */
 $limeGreen: #18EC50;
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400|Roboto|Roboto+Slab:300,400);
-
-@font-face {
-  font-family: Bebas;
-  src: url('../fonts/BebasNeue.otf');
-}
-
-
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400|Lustria|Lato:300,400,700|Roboto+Slab:300,400);
 
 
 /* Pre loader */
@@ -121,7 +114,7 @@ body {
   text-align: center;
   padding-bottom: 50px;
   color:$mintCream;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Lato', sans-serif;
 
   h1{
     font-size: 60px;
@@ -130,11 +123,11 @@ body {
   h2{
     font-size: 46px;
     margin-bottom: 50px;
-    font-weight: 300;
+    font-weight: 400;
   }
   h3{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   .fa-envelope {
@@ -212,10 +205,11 @@ body {
   padding-top: 45px;
 
   p {
-    font-family: 'Ubuntu', serrif;
+    font-family: 'Lustria', serrif;
     font-size: 24px;
     color: $fcGrey;
-    font-weight: 300;
+    padding: 0 25px 0 25px;
+    text-align: justify;
   }
 
   p::first-letter {
@@ -224,6 +218,13 @@ body {
     font-weight: 700;
     line-height: 0em;
   }
+
+
+}
+
+.home-icon-deco{
+ color: $orangeIsh;
+  text-transform: uppercase;
 }
 
 .kwicks-home {
@@ -247,7 +248,7 @@ body {
   padding-bottom: 40px;
 
   h1{
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: $fcBlue;
     font-size: 42px;
     font-weight: 700;
@@ -255,15 +256,15 @@ body {
 
   h2{
     color: $fcBlue;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
   }
 
   p{
-    font-family: 'Ubuntu', serrif;
+    font-family: 'Lustria', serrif;
     font-size: 20px;
     text-align: justify;
-    font-weight: 300;
+
   }
 
 
@@ -303,7 +304,7 @@ header {
   transition: height 0.3s; 
 }
 header h1#logo {
-  font-family: Bebas;
+  font-family: 'Lato', sans-serif;
   display: inline-block;
   height: 150px;
   line-height: 150px;
@@ -334,11 +335,11 @@ header nav {
 }
 header nav a {
   color: $fcBlue;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 150px;
   margin-left: 20px;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 26px;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -370,6 +371,8 @@ header.smaller nav a {
 
 .sl-slider-home {
   height: 400px;
+  font-family: 'Roboto Slab', sans-serif;
+
 }
 
 .sl-slider-service {
@@ -468,7 +471,8 @@ header.smaller nav a {
   top: 90%;
   width: 40px;
   height: 40px;
-  border: 8px solid #ddd;
+  border: 8px solid $mintCream;
+  opacity: 0.8;
 
   text-indent: -90000px;
   margin-top: -40px;
@@ -482,7 +486,8 @@ header.smaller nav a {
 }
 
 .nav-arrows span:hover {
-  border-color: rgba(150,150,150,0.9);
+  border-color: $fcBlue;
+  opacity: 0.7;
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -545,7 +550,7 @@ header.smaller nav a {
 }
 
 .banner-1 {
-  color: white;
+  color: $mintCream;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center;
@@ -579,7 +584,7 @@ header.smaller nav a {
 
 .banner-2 {
 
-  color: white;
+  color: $mintCream;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center;
@@ -613,7 +618,7 @@ header.smaller nav a {
 
 .banner-3 {
 
-  color: white;
+  color: $mintCream;
   margin-top: 5%;
   opacity: 0.95;
   text-align: center;
