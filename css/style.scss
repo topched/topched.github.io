@@ -22,7 +22,7 @@ $lightBlue: #2582B7;
 $orangeIsh: #E88500; /* RGB CODE = 232 133 0 */
 $limeGreen: #18EC50;
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400|Lustria|Lato:300,400,700|Roboto+Slab:300,400);
+@import url(http://fonts.googleapis.com/css?family=Lustria|Lato:200,300,400,700);
 
 
 /* Pre loader */
@@ -160,42 +160,81 @@ body {
 }
 /*      Services Page
 -------------------------------------------------------------- */
-.poly-service{
+.service{
   background-color: $mintCream;
   color: $fcBlue;
+  font-family: 'Lato', sans-serif;
 
   h1{
-    font-family: 'Roboto Slab', serrif;
+    font-weight: 400;
   }
 
   h2{
-    font-family: 'Roboto Slab', serrif;
+    font-weight: 300;
+  }
+
+  p{
+    font-weight: 200;
+    margin-top: 35px;
+    font-size: 18px;
+    color: $fcGrey;
   }
 
 }
 
+.service-contact { 
+  margin-top: 40px;
+
+  a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+}
+
+.service-span {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
 .kwicks-service {
- height: 400px;
+ height: 375px;
  margin-top: 30px!important;
+ 
 
  li {
 
-    height: 400px;
-    /* overridden by kwicks but good for when JavaScript is disabled */
-    margin-left: 5px;
-    float: left;
+  height: 375px;
+  /* overridden by kwicks but good for when JavaScript is disabled */
+  margin-left: 5px;
+  float: left;
 
   }
 
 }
 
 #poly-advantages {
-  font-family: 'Ubuntu', serrif;
-  font-size: 20px;
-  font-weight: 300;
+  font-family: 'Lato', serrif;
+  font-size: 18px;
+  font-weight: 200;
   color: $fcGrey;
 
+  ul{
+    list-style-type: none;
+
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    padding-start: 0px;
+  }
 }
+
+#slider-epoxy {
+  margin-top: 30px;
+}
+
+#slider-grind {
+  margin-top: 30px;
+}
+
 
 
 /*      Home Page aka index
@@ -206,7 +245,7 @@ body {
 
   p {
     font-family: 'Lustria', serrif;
-    font-size: 24px;
+    font-size: 20px;
     color: $fcGrey;
     padding: 0 25px 0 25px;
     text-align: justify;
@@ -224,7 +263,7 @@ body {
 
 .home-icon-deco{
  color: $orangeIsh;
-  text-transform: uppercase;
+ text-transform: uppercase;
 }
 
 .kwicks-home {
@@ -232,12 +271,12 @@ body {
 
  li {
 
-    height: 400px;
-    /* overridden by kwicks but good for when JavaScript is disabled */
-    margin-left: 5px;
-    float: left;
+  height: 400px;
+  /* overridden by kwicks but good for when JavaScript is disabled */
+  margin-left: 5px;
+  float: left;
 
-  }
+}
 
 }
 
@@ -262,7 +301,7 @@ body {
 
   p{
     font-family: 'Lustria', serrif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 
   }
@@ -524,8 +563,8 @@ header.smaller nav a {
   background: rgba(0,0,0,0.8);
   cursor: pointer;
   box-shadow: 
-    0 1px 1px rgba(255,255,255,0.4), 
-    inset 0 1px 1px rgba(0,0,0,0.1);
+  0 1px 1px rgba(255,255,255,0.4), 
+  inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
 .nav-dots span.nav-dot-current:after {
