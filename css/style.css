@@ -69,6 +69,9 @@ body {
   left: 100%;
   margin-left: .5em; }
 
+.fancybox-nav span {
+  visibility: visible; }
+
 /*      Contact Page
 -------------------------------------------------------------- */
 .contact {
@@ -116,6 +119,8 @@ body {
     margin-top: 35px;
     font-size: 18px;
     color: #2e2e2e; }
+  .service img {
+    margin-top: 3px; }
 
 .service-contact {
   margin-top: 40px; }
@@ -159,8 +164,9 @@ body {
   background-color: #F0FFF0;
   padding-top: 45px; }
   .main-info p {
-    font-family: 'Lustria', serrif;
+    font-family: 'Lato', serrif;
     font-size: 20px;
+    font-weight: 400px;
     color: #2e2e2e;
     padding: 0 25px 0 25px;
     text-align: justify; }
@@ -195,7 +201,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400; }
   .specialize p {
-    font-family: 'Lustria', serrif;
+    font-family: 'Lato', serrif;
+    font-weight: 400;
     font-size: 18px;
     text-align: justify; }
 
@@ -446,7 +453,7 @@ header.smaller nav a {
 /* Slide 1 */
 .bg-1 .sl-slide-inner, .bg-1 .sl-content-slice {
   background-color: #252E7B;
-  background-image: url("../images/banner/poly.jpg");
+  background-image: url("../images/banner/banner-1.JPG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -473,10 +480,9 @@ header.smaller nav a {
 /* Slide 2 */
 .bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {
   background-color: #3B7E2E;
-  background-image: url("../images/banner/epoxy.jpg");
+  background-image: url("../images/banner/banner-3.JPG");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-position: center; }
 
 .banner-2 {
   color: #F0FFF0;
@@ -500,7 +506,7 @@ header.smaller nav a {
 /* Slide 3 */
 .bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {
   background-color: #252E7B;
-  background-image: url("../images/banner/custom.png");
+  background-image: url("../images/banner/banner-4.JPG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -540,43 +546,45 @@ header.smaller nav a {
   .special-align {
     margin-top: 10%;
     margin-left: 30px; } }
+@media all and (max-width: 1600px) {
+  #homeImage {
+    display: none; } }
 @media all and (min-width: 376px) and (max-width: 1024px) {
-  header h1#logo {
+  /*header h1#logo {
     display: block;
     float: none;
     margin: 0 auto;
     height: 95px;
     line-height: 75px;
     font-size: 40px;
-    text-align: center; }
-
+    text-align: center;
+  }
   header nav {
     display: block;
     float: none;
     height: 75px;
     text-align: center;
-    margin: 0 auto; }
-
+    margin: 0 auto; 
+  }
   header nav a {
     line-height: 30px;
     margin: 0 10px;
-    font-size: 24px;
-    font-weight: 400; }
-
-  header.smaller {
-    height: 75px; }
-
+    font-size:24px;
+    font-weight:400; 
+  }
+  header.smaller { height: 75px; }
   header.smaller h1#logo {
     line-height: 40px;
-    font-size: 20px; }
-
+    font-size: 20px; 
+  }
   header.smaller nav {
     height: 20px;
-    margin-top: -25px; }
-
+    margin-top: -25px; 
+  }
   header.smaller nav a {
-    line-height: 20px;
-    font-size: 14px; } }
+    line-height: 20px; 
+    font-size: 14px;
+  }*/ }
 /* Hide slider on mobile screen */
 @media all and (max-width: 768px) {
   #slider {
