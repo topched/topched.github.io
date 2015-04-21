@@ -110,6 +110,10 @@ body {
    visibility: visible;
 }
 
+.last-service{
+  margin-bottom: 45px;
+}
+
 /*      Contact Page
 -------------------------------------------------------------- */
 .contact {
@@ -157,10 +161,37 @@ body {
       color: $fcBlue;
     }
   }
-
-
-
 }
+
+/* do it yourself page 
+----------------------------------------------------*/
+.doityourself{
+  background-color: $mintCream;
+  font-family: 'Lato', sans-serif;
+  color: $fcBlue;
+
+  h1{
+    font-weight: 400;
+  }
+
+  img{
+    max-width: 400px;
+    text-align: center;
+    overflow: none;
+  }
+
+  p{
+    font-weight: 200;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: $fcGrey;
+  }
+}
+
+
+
+
 /*      Services Page
 -------------------------------------------------------------- */
 .service{
@@ -195,6 +226,7 @@ body {
   a{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    text-decoration: none;
   }
 }
 
@@ -253,7 +285,7 @@ body {
   p {
     font-family: 'Lato', serrif;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 300;
     color: $fcGrey;
     padding: 0 25px 0 25px;
     text-align: justify;
@@ -276,6 +308,7 @@ body {
 
 .kwicks-home {
  height: 400px;
+ max-width: 530px;
 
  li {
 
@@ -309,7 +342,7 @@ body {
 
   p{
     font-family: 'Lato', serrif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 18px;
     text-align: justify;
 
@@ -665,6 +698,36 @@ header.smaller nav a {
 }
 
 .banner-3 {
+
+  color: $mintCream;
+  margin-top: 5%;
+  opacity: 0.95;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    padding: 5px 5px 5px 5px;
+    width: 400px;
+    margin-left: 50px;
+    background-color: $fcBlue;
+    border-radius: 20px;
+  }
+  h2{
+    background-color: $orangeIsh;
+    font-size: 36px;
+    width: 500px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 20px;
+  }
+}
+
+.bg-4 .sl-slide-inner, .bg-4 .sl-content-slice {
+  background-color:$fcDarkBlue;
+  background-image: url('../images/banner/banner-5.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-4 {
 
   color: $mintCream;
   margin-top: 5%;

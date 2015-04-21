@@ -72,6 +72,9 @@ body {
 .fancybox-nav span {
   visibility: visible; }
 
+.last-service {
+  margin-bottom: 45px; }
+
 /*      Contact Page
 -------------------------------------------------------------- */
 .contact {
@@ -104,6 +107,25 @@ body {
     .contact .contact-social-icon .fa:hover {
       color: #337ab7; }
 
+/* do it yourself page 
+----------------------------------------------------*/
+.doityourself {
+  background-color: #F0FFF0;
+  font-family: 'Lato', sans-serif;
+  color: #337ab7; }
+  .doityourself h1 {
+    font-weight: 400; }
+  .doityourself img {
+    max-width: 400px;
+    text-align: center;
+    overflow: none; }
+  .doityourself p {
+    font-weight: 200;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #2e2e2e; }
+
 /*      Services Page
 -------------------------------------------------------------- */
 .service {
@@ -126,7 +148,8 @@ body {
   margin-top: 40px; }
   .service-contact a {
     font-family: 'Lato', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    text-decoration: none; }
 
 .service-span {
   font-family: 'Lato', sans-serif;
@@ -166,7 +189,7 @@ body {
   .main-info p {
     font-family: 'Lato', serrif;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 300;
     color: #2e2e2e;
     padding: 0 25px 0 25px;
     text-align: justify; }
@@ -181,7 +204,8 @@ body {
   text-transform: uppercase; }
 
 .kwicks-home {
-  height: 400px; }
+  height: 400px;
+  max-width: 530px; }
   .kwicks-home li {
     height: 400px;
     /* overridden by kwicks but good for when JavaScript is disabled */
@@ -202,7 +226,7 @@ body {
     font-weight: 400; }
   .specialize p {
     font-family: 'Lato', serrif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 18px;
     text-align: justify; }
 
@@ -524,6 +548,31 @@ header.smaller nav a {
     background-color: #337ab7;
     border-radius: 20px; }
   .banner-3 h2 {
+    background-color: #E88500;
+    font-size: 36px;
+    width: 500px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 20px; }
+
+.bg-4 .sl-slide-inner, .bg-4 .sl-content-slice {
+  background-color: #252E7B;
+  background-image: url("../images/banner/banner-5.JPG");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.banner-4 {
+  color: #F0FFF0;
+  margin-top: 5%;
+  opacity: 0.95;
+  text-align: center; }
+  .banner-4 h1 {
+    font-size: 40px;
+    padding: 5px 5px 5px 5px;
+    width: 400px;
+    margin-left: 50px;
+    background-color: #337ab7;
+    border-radius: 20px; }
+  .banner-4 h2 {
     background-color: #E88500;
     font-size: 36px;
     width: 500px;

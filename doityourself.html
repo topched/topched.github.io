@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Floor Coat Inc.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">
+
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+<header>
+    <div class="container">
+        <h1 id="logo"><a href="index.html">Floor Coat Inc.</a></h1>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href ="doityourself.html">Do It Yourself</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- /header -->
+
+<div id="main">
+
+<div class="doityourself col-md-10 col-md-offset-1 col-sm-12">
+
+    <div class="row">
+        <h1 class="col-xs-10 col-xs-offset-1 headline center">
+            <span>Do It Yourself</span>
+        </h1>
+    </div>
+
+    <div class="col-xs-12">
+        <div class="col-md-4 col-xs-6 col-xs-offset-3>">
+            <img class="center" src="images/doit/doit1.png" alt="" />
+        </div>
+        <div class="col-md-4 col-xs-6 col-xs-offset-3>">
+            <img class="center" src="images/doit/doit2.png" alt="" />
+        </div>
+        <div class="col-md-4 col-xs-6 col-xs-offset-3>">
+            <img class="center" src="images/doit/doit3.png" alt="" />
+        </div>
+    </div>
+
+    <div class="row">
+        <p class="col-xs-8 col-xs-offset-2">Floor Coat Inc. offers you a complete coating kit, purchase with confidence directly from professional installers. The do-it-yourself floor coating kit includes everything you need to transform your concrete into something you can be proud of. The Floor Coat kit is perfect for the do-it-yourselfer that wants the highest quality polyaspartic coating at the best price. You can use our polyaspartic coating kit indoors or outdoors, on garages, steps, or patios. With its high strength and quick dry times our do-it-yourself polyaspartic coating kit is perfect for any weekend job. Don’t waste your time on the box store kits that fail and provide you with insufficient advice and materials. Every piece of concrete is different we set up a kit specifically designed for you.</p>
+
+        <div class="row col-xs-8 col-xs-offset-2 center service-contact last-service">
+
+            <i class="fa fa-3x fa-hand-o-right pull-left"><a href="contact.html">  CONTACT US</a><span class="service-span"> today for more information about our do-it-yourself coating kits
+            </span></i>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+</div>
+<!-- /Main -->
+
+<!-- Footer -->
+<div class="row col-xs-10 col-xs-offset-1 social-media-footer">
+    <div class="center">
+        <a class="fa-3x" href="https://twitter.com/EngraveConcrete"><i class="fa fa-twitter"></i></a>
+        <a class="fa-3x" href="https://facebook.com/floorcoat"><i class="fa fa-facebook"></i></a>
+        <a class="fa-3x" href="https://pinterest.com/floorcoat/"><i class="fa fa-pinterest"></i></a>
+        <a class="fa-3x" href="https://linkedin.com/pub/jordan-chorneyko/93/99b/671"><i class="fa fa-linkedin"></i></a>
+        <a class="fa-3x" href="https://youtube.com/user/decorativesurfaces?feature=guide"><i class="fa fa-youtube"></i></a>
+        <a class="fa-3x" href="https://www.yelp.com/biz/floor-coat-inc-st-albert"><i class="fa fa-yelp"></i></a>
+    </div>
+</div>
+<!-- /Footer -->
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+
+    $(document).ready(function() {
+
+        //scroll listener for nav bar
+        window.addEventListener('scroll', function(e) {
+
+            var distanceY = window.pageYOffset;
+
+            var shrinkOn = 20,
+            nav = document.querySelector("header");
+            if(distanceY > shrinkOn) {
+                //alert("hit");
+                classie.add(nav, "smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+
+        });
+    });
+    </script>
+
+</body>
+</html>
