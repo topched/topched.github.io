@@ -31,6 +31,10 @@ body {
 .f-left {
   float: left; }
 
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
 .magnifier {
   border: 5px solid #FFF;
   height: 250px;
@@ -46,7 +50,7 @@ body {
   text-align: center; }
 
 .headline-margin {
-  margin: 30px 5px 5px 5px; }
+  margin: 30px 5px 15px 5px; }
 
 .headline span {
   position: relative; }
@@ -113,12 +117,14 @@ body {
   background-color: #F0FFF0;
   font-family: 'Lato', sans-serif;
   color: #337ab7; }
+  .doityourself #noOverflow {
+    overflow: hidden; }
   .doityourself h1 {
     font-weight: 400; }
   .doityourself img {
     max-width: 400px;
     text-align: center;
-    overflow: none; }
+    overflow: hidden; }
   .doityourself p {
     font-weight: 200;
     margin-top: 35px;
@@ -205,7 +211,8 @@ body {
 
 .kwicks-home {
   height: 400px;
-  max-width: 530px; }
+  max-width: 530px;
+  margin-bottom: 15px; }
   .kwicks-home li {
     height: 400px;
     /* overridden by kwicks but good for when JavaScript is disabled */
@@ -245,83 +252,159 @@ body {
 
 /*      Header  
 -------------------------------------------------------------- */
-header {
-  width: 100%;
+header .myNav {
   height: 150px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 5000;
   background-image: url("../images/buried.png");
   background-color: #2e2e2e;
-  /*background-color: white;*/
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s; }
-
-header h1#logo {
-  font-family: 'Lato', sans-serif;
-  display: inline-block;
-  height: 150px;
-  line-height: 150px;
-  margin-top: -1px;
-  float: left;
+  color: #337ab7;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+header .myNavMenu {
+  margin-top: 45px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  header .myNavMenu li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 26px; }
+  header .myNavMenu a:hover {
+    color: #80C1E7;
+    text-decoration: none;
+    background-color: #2e2e2e;
+    background-image: url("../images/buried.png");
+    text-decoration: none; }
+header .brand {
+  margin: 30px 0 0 0;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 60px;
   font-weight: 400;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  header .brand a:hover {
+    color: #80C1E7;
+    text-decoration: none; }
 
-header h1 a {
+header.smaller .myNav {
+  height: 75px; }
+header.smaller .myNavMenu {
+  margin-top: 7px; }
+header.smaller .brand {
+  margin: 10px 0 0 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 40px;
+  font-weight: 400; }
+
+#navbar {
+  background-color: #2e2e2e;
+  background-image: url("../images/buried.png");
+  border-top: 5px solid #2e2e2e;
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.navContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.navbar-header span {
+  background-color: #252E7B; }
+
+.navbar-toggle.myToggle {
+  background-color: #337ab7;
+  margin-top: 20px; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: #337ab7; }
 
-header h1 a:hover {
-  color: #80C1E7;
-  text-decoration: none; }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f1f1f1;
+  background-color: #b27677; }
 
-.active {
-  color: #80C1E7;
-  text-decoration: none; }
+@media only screen and (max-width: 850px) {
+  .collapsing, .in {
+    background-color: #2e2e2e; }
 
-header nav {
-  display: inline-block;
-  float: right;
-  padding-right: 10px; }
+  .collapsing ul li a, .in ul li a {
+    color: #337ab7 !important; }
 
-header nav a {
-  color: #337ab7;
-  font-family: 'Lato', sans-serif;
-  line-height: 150px;
-  margin-left: 20px;
-  font-weight: 300;
-  font-size: 26px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  .collapsing ul li a:hover, .in ul li a:hover {
+    color: #80C1E7 !important; } }
+@media all and (max-width: 600px) {
+  .headline span:before,
+  .headline span:after {
+    display: none; }
 
-header nav a:hover {
-  color: #9fdbfc;
-  text-decoration: none; }
+  header .myNav {
+    height: 75px; }
+  header .myNavMenu {
+    margin-top: 45px; }
+    header .myNavMenu li {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 22px; }
+    header .myNavMenu a:hover {
+      color: #80C1E7;
+      text-decoration: none;
+      background-color: #2e2e2e;
+      text-decoration: none; }
+  header .brand {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 8px; }
+    header .brand a:hover {
+      color: #80C1E7;
+      text-decoration: none; }
 
-header.smaller {
-  height: 75px; }
+  .navContainer {
+    width: 90%; }
 
-header.smaller h1#logo {
-  height: 75px;
-  line-height: 75px;
-  font-size: 40px; }
+  #main {
+    padding-top: 45px; }
 
-header.smaller nav a {
-  line-height: 75px;
-  font-size: 20px; }
+  header.smaller .brand {
+    margin-top: 8px; } }
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  header .myNavMenu {
+    margin-top: 45px; }
+    header .myNavMenu li {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 22px; }
+    header .myNavMenu a:hover {
+      color: #80C1E7;
+      text-decoration: none;
+      background-color: #2e2e2e;
+      text-decoration: none; }
+  header .brand {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    font-weight: 400; }
+    header .brand a:hover {
+      color: #80C1E7;
+      text-decoration: none; }
 
+  header.smaller .myNavMenu {
+    margin-top: 7px; }
+  header.smaller .brand {
+    margin-left: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    font-weight: 400; }
+
+  .navContainer {
+    width: 90%; } }
 /*      sl-slider
 -------------------------------------------------------------- */
 .sl-slider-wrapper {
@@ -479,8 +562,8 @@ header.smaller nav a {
   background-color: #252E7B;
   background-image: url("../images/banner/banner-1.JPG");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: -98px; }
 
 .banner-1 {
   color: #F0FFF0;
@@ -505,8 +588,7 @@ header.smaller nav a {
 .bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {
   background-color: #3B7E2E;
   background-image: url("../images/banner/banner-3.JPG");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-position-y: -297px; }
 
 .banner-2 {
   color: #F0FFF0;
@@ -530,10 +612,9 @@ header.smaller nav a {
 /* Slide 3 */
 .bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {
   background-color: #252E7B;
-  background-image: url("../images/banner/banner-4.JPG");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  background-image: url("../images/banner/custom-checkerboard-logos-polyaspartic-coatings.jpeg");
+  background-size: cover;
+  background-position-y: -100px; }
 
 .banner-3 {
   color: #F0FFF0;
@@ -558,7 +639,7 @@ header.smaller nav a {
   background-color: #252E7B;
   background-image: url("../images/banner/banner-5.JPG");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center center; }
 
 .banner-4 {
   color: #F0FFF0;
@@ -594,112 +675,20 @@ header.smaller nav a {
 @media all and (min-width: 1024px) {
   .special-align {
     margin-top: 10%;
-    margin-left: 30px; } }
+    margin-left: 30px;
+    margin-right: 10px; } }
+@media all and (max-width: 1024px) {
+  .headline span {
+    font-size: 26px; } }
 @media all and (max-width: 1600px) {
   #homeImage {
     display: none; } }
-@media all and (min-width: 376px) and (max-width: 1024px) {
-  /*header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 95px;
-    line-height: 75px;
-    font-size: 40px;
-    text-align: center;
-  }
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size:24px;
-    font-weight:400; 
-  }
-  header.smaller { height: 75px; }
-  header.smaller h1#logo {
-    line-height: 40px;
-    font-size: 20px; 
-  }
-  header.smaller nav {
-    height: 20px;
-    margin-top: -25px; 
-  }
-  header.smaller nav a {
-    line-height: 20px; 
-    font-size: 14px;
-  }*/ }
 /* Hide slider on mobile screen */
 @media all and (max-width: 768px) {
   #slider {
     display: none; } }
-@media all and (min-width: 376px) and (max-width: 768px) {
-  header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 95px;
-    line-height: 75px;
-    font-size: 40px;
-    text-align: center; }
-
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; }
-
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size: 14px;
-    font-weight: 400; } }
 /* For iphone 3/4/5 */
 @media all and (max-width: 375px) {
-  header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 75px;
-    line-height: 75px;
-    font-size: 20px;
-    text-align: center; }
-
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; }
-
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size: 12px;
-    font-weight: 400; }
-
-  header.smaller {
-    height: 75px; }
-
-  header.smaller h1#logo {
-    height: 30px;
-    line-height: 30px;
-    font-size: 20px; }
-
-  header.smaller nav {
-    height: 20px;
-    line-height: 20px; }
-
-  header.smaller nav a {
-    line-height: 20px;
-    font-size: 12px; }
-
   .main-info h1 {
     font-size: 20px; } }
 

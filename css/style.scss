@@ -58,6 +58,11 @@ body {
   float: left;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 .magnifier{
   border: 5px solid #FFF;
   height: 250px;
@@ -77,7 +82,7 @@ body {
 }
 
 .headline-margin {
-  margin: 30px 5px 5px 5px;
+  margin: 30px 5px 15px 5px;
 }
 
 .headline span{
@@ -170,6 +175,11 @@ body {
   font-family: 'Lato', sans-serif;
   color: $fcBlue;
 
+
+  #noOverflow{
+    overflow: hidden;
+  }
+
   h1{
     font-weight: 400;
   }
@@ -177,7 +187,7 @@ body {
   img{
     max-width: 400px;
     text-align: center;
-    overflow: none;
+    overflow: hidden;
   }
 
   p{
@@ -309,6 +319,7 @@ body {
 .kwicks-home {
  height: 400px;
  max-width: 530px;
+ margin-bottom: 15px;
 
  li {
 
@@ -368,80 +379,254 @@ body {
 /*      Header  
 -------------------------------------------------------------- */
 header {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5000;
-  background-image: url('../images/buried.png');
+
+  .myNav {
+
+    height: 150px;
+    z-index: 5000;
+    background-image: url("../images/buried.png");
+    background-color: $fcGrey;
+    color: $fcBlue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+  }
+
+  .myNavMenu {
+    margin-top:45px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+
+    li{
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 26px;
+    }
+
+    a:hover{
+      color: $fcLightBlue;
+      text-decoration: none;
+      background-color: $fcGrey;
+      background-image: url("../images/buried.png");
+      text-decoration: none;
+    } 
+  }
+
+  .brand {
+    margin: 30px 0 0 0;
+    font-family:  'Roboto Slab', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+
+    a:hover{
+      color: $fcLightBlue;
+      text-decoration: none;
+    }
+  }
+}
+
+header.smaller {
+
+  .myNav{
+    height: 75px;
+  }
+
+  .myNavMenu {
+    margin-top: 7px;
+  }
+
+  .brand {
+    margin: 10px 0 0 0;
+    font-family:  'Roboto Slab', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+    
+}
+
+#navbar {
   background-color: $fcGrey;
-  /*background-color: white;*/
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s; 
-}
-header h1#logo {
-  font-family: 'Lato', sans-serif;
-  display: inline-block;
-  height: 150px;
-  line-height: 150px;
-  margin-top: -1px;
-  float: left;
-  font-size: 60px;
-  font-weight: 400;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; 
+  background-image: url("../images/buried.png");
+  border-top: 5px solid $fcGrey;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-header h1 a { color: $fcBlue; }
-header h1 a:hover {
-  color: $fcLightBlue;
-  text-decoration: none;
+.navContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.active{
-  color: $fcLightBlue;
-  text-decoration: none;
-}
-header nav {
-  display: inline-block;
-  float: right;
-  padding-right: 10px; 
-}
-header nav a {
-  color: $fcBlue;
-  font-family: 'Lato', sans-serif;
-  line-height: 150px;
-  margin-left: 20px;
-  font-weight: 300;
-  font-size: 26px;
 
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; 
+.navbar-header {
+  span {
+    background-color: $fcDarkBlue;
+  }
+
 }
-header nav a:hover {
-  color: #9fdbfc;
-  text-decoration: none; 
+
+.navbar-toggle.myToggle {
+  background-color: $fcBlue;
+  margin-top: 20px;
 }
-header.smaller { height: 75px; }
-header.smaller h1#logo {
-  height: 75px;
-  line-height: 75px;
-  font-size: 40px; 
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {color: $fcBlue;}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {color: #f1f1f1; background-color: #b27677;}
+
+@media only screen and (max-width: 850px) {
+.collapsing, .in {background-color: $fcGrey;}
+.collapsing ul li a, .in ul li a {color: $fcBlue!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: $fcLightBlue!important;}
 }
-header.smaller nav a { 
-  line-height: 75px; 
-  font-size: 20px;
+
+@media all and (max-width: 600px) {
+
+
+
+      .headline span:before,
+  .headline span:after{
+    display: none;
+  }
+
+
+
+  header {
+
+    .myNav {
+      height: 75px;
+    }
+
+
+    .myNavMenu {
+      margin-top:45px;
+
+      li{
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+      }
+
+      a:hover{
+        color: $fcLightBlue;
+        text-decoration: none;
+        background-color: $fcGrey;
+        text-decoration: none;
+      } 
+    }
+
+    .brand {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      margin-top: 8px;
+
+      a:hover{
+        color: $fcLightBlue;
+        text-decoration: none;
+      }
+    }
+  }
+
+    .navContainer {
+    width: 90%;
+  }
+
+  #main {
+    padding-top: 45px;
+  }
+
+    header.smaller {
+
+
+
+
+      .brand {
+        margin-top: 8px;
+      }
+        
+    
+  }
+
+
+
+
+
 }
+
+
+@media all and (min-width: 601px) and (max-width: 1024px) {
+
+  header {
+
+
+
+    .myNavMenu {
+      margin-top:45px;
+
+      li{
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+      }
+
+      a:hover{
+        color: $fcLightBlue;
+        text-decoration: none;
+        background-color: $fcGrey;
+        text-decoration: none;
+      } 
+    }
+
+    .brand {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 50px;
+      font-weight: 400;
+
+
+      a:hover{
+        color: $fcLightBlue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  header.smaller {
+
+
+
+    .myNavMenu {
+      margin-top: 7px;
+    }
+
+    .brand {
+      margin-left: 30px;
+      font-family:  'Roboto Slab', sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+    }
+      
+  
+}
+
+  .navContainer {
+    width: 90%;
+  }
+
+
+}
+
+
 
 /*      sl-slider
 -------------------------------------------------------------- */
@@ -625,9 +810,8 @@ header.smaller nav a {
   background-color: $fcDarkBlue;
   background-image: url('../images/banner/banner-1.JPG');
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
-
+  background-position-y: -98px;
 }
 
 .banner-1 {
@@ -657,10 +841,7 @@ header.smaller nav a {
 .bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {
   background-color: $fcLightGreen;
   background-image: url('../images/banner/banner-3.JPG');
-  background-repeat: no-repeat;
-  background-position: center;
-
-
+  background-position-y: -297px;
 }
 
 .banner-2 {
@@ -691,10 +872,9 @@ header.smaller nav a {
 /* Slide 3 */
 .bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {
   background-color:$fcDarkBlue;
-  background-image: url('../images/banner/banner-4.JPG');
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url('../images/banner/custom-checkerboard-logos-polyaspartic-coatings.jpeg');
   background-size: cover;
+  background-position-y: -100px; 
 }
 
 .banner-3 {
@@ -724,7 +904,7 @@ header.smaller nav a {
   background-color:$fcDarkBlue;
   background-image: url('../images/banner/banner-5.JPG');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center center;
 }
 
 .banner-4 {
@@ -776,8 +956,15 @@ header.smaller nav a {
   .special-align {
     margin-top: 10%;
     margin-left: 30px;
+    margin-right: 10px;
   }
 
+}
+
+@media all and (max-width: 1024px) {
+  .headline span {
+    font-size: 26px;
+  }
 }
 
 @media all and (max-width: 1600px){
@@ -786,48 +973,7 @@ header.smaller nav a {
   }
 }
 
-@media all and (min-width: 376px) and (max-width: 1024px) {
 
-  /*header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 95px;
-    line-height: 75px;
-    font-size: 40px;
-    text-align: center;
-  }
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size:24px;
-    font-weight:400; 
-  }
-  header.smaller { height: 75px; }
-  header.smaller h1#logo {
-    line-height: 40px;
-    font-size: 20px; 
-  }
-  header.smaller nav {
-    height: 20px;
-    margin-top: -25px; 
-  }
-  header.smaller nav a {
-    line-height: 20px; 
-    font-size: 14px;
-  }*/
-
-
-
-
-}
 /* Hide slider on mobile screen */
 @media all and (max-width: 768px) {
 
@@ -839,70 +985,13 @@ header.smaller nav a {
 
 @media all and (min-width: 376px) and (max-width: 768px){
 
-  header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 95px;
-    line-height: 75px;
-    font-size: 40px;
-    text-align: center;
-  }
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size:14px;
-    font-weight:400; 
-  }
+
 
 }
 
 /* For iphone 3/4/5 */
 @media all and (max-width: 375px){
-  header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 75px;
-    line-height: 75px;
-    font-size: 20px;
-    text-align: center;
-  }
-  header nav {
-    display: block;
-    float: none;
-    height: 75px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-  header nav a {
-    line-height: 30px;
-    margin: 0 10px;
-    font-size:12px;
-    font-weight:400; 
-  }
 
-  header.smaller { height: 75px; }
-  header.smaller h1#logo {
-    height:30px;
-    line-height: 30px;
-    font-size: 20px; 
-  }
-  header.smaller nav {
-    height: 20px;
-    line-height: 20px;
-  }
-  header.smaller nav a {
-    line-height: 20px; 
-    font-size: 12px;
-  }
 
   .main-info h1 {
     font-size: 20px;
