@@ -155,11 +155,13 @@ body {
   .service-contact a {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 28px; }
 
 .service-span {
   font-family: 'Lato', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 28px; }
 
 .kwicks-service {
   height: 375px;
