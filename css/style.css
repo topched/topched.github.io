@@ -198,7 +198,8 @@ body {
     font-weight: 300;
     color: #2e2e2e;
     padding: 0 25px 0 25px;
-    text-align: justify; }
+    text-align: justify;
+    margin-top: 15px; }
   .main-info p::first-letter {
     font-size: 60px;
     color: #337ab7;
@@ -240,9 +241,11 @@ body {
 .more-info-btn {
   color: white;
   background-color: #337ab7;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 24px;
-  font-family: 'Roboto Slab', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif;
+  padding: 10px 16px;
+  border-radius: 6px; }
 
 .more-info-btn:hover {
   text-decoration: none;
@@ -675,8 +678,7 @@ header.smaller .brand {
 @media all and (min-width: 1024px) {
   .special-align {
     margin-top: 10%;
-    margin-left: 30px;
-    margin-right: 10px; } }
+    margin-right: 20px; } }
 @media all and (max-width: 1024px) {
   .headline span {
     font-size: 26px; } }
