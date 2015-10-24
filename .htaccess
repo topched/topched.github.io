@@ -1,0 +1,16 @@
+Redirect 301 /decorative-polished-concrete http://www.floorcoat.ca/services
+Redirect 301 /commercial-floor-designs http://www.floorcoat.ca/services
+Redirect 301 /epoxy-coating-services http://www.floorcoat.ca/services
+Redirect 301 /stairs-repair-chip-system http://www.floorcoat.ca/services
+Redirect 301 /garage-floor-chip-system http://www.floorcoat.ca/services
+Redirect 301 /contact-us-2 http://floorcoat.ca/contact
+Redirect 301 /patios-pool-decks http://floorcoat.ca/services
+Redirect 301 /pool-deck http://floorcoat.ca/services
+Redirect 301 /decorative-driveways-sidewalks-patios http://floorcoat.ca/services
+Redirect 301 /logos http://floorcoat.ca/services
+Redirect 301 /about-floor-coat-inc http://floorcoat.ca
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html

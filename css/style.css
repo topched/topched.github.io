@@ -344,6 +344,10 @@ header.smaller .brand {
   .collapsing ul li a:hover, .in ul li a:hover {
     color: #80C1E7 !important; } }
 @media all and (max-width: 600px) {
+  .service img {
+    width: 125px;
+    height: 125px; }
+
   .headline span:before,
   .headline span:after {
     display: none; }
@@ -363,9 +367,9 @@ header.smaller .brand {
       text-decoration: none; }
   header .brand {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 400;
-    margin-top: 8px; }
+    margin-top: 18px; }
     header .brand a:hover {
       color: #80C1E7;
       text-decoration: none; }
@@ -377,7 +381,13 @@ header.smaller .brand {
     padding-top: 45px; }
 
   header.smaller .brand {
-    margin-top: 8px; } }
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 18px; }
+    header.smaller .brand a:hover {
+      color: #80C1E7;
+      text-decoration: none; } }
 @media all and (min-width: 601px) and (max-width: 1024px) {
   header .myNavMenu {
     margin-top: 45px; }

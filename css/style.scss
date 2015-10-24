@@ -496,6 +496,12 @@ header.smaller {
 @media all and (max-width: 600px) {
 
 
+    .service img {
+      width: 125px;
+      height: 125px;
+    }
+
+
 
       .headline span:before,
   .headline span:after{
@@ -530,9 +536,9 @@ header.smaller {
 
     .brand {
       font-family: 'Roboto Slab', sans-serif;
-      font-size: 40px;
+      font-size: 26px;
       font-weight: 400;
-      margin-top: 8px;
+      margin-top: 18px;
 
       a:hover{
         color: $fcLightBlue;
@@ -551,13 +557,19 @@ header.smaller {
 
     header.smaller {
 
+          .brand {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+      margin-top: 18px;
 
-
-
-      .brand {
-        margin-top: 8px;
+      a:hover{
+        color: $fcLightBlue;
+        text-decoration: none;
       }
-        
+
+
+        }
     
   }
 
