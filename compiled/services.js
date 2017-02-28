@@ -965,10 +965,6 @@ __webpack_require__(3);
 
 module.exports = function () {
 
-	
-	$("#preloader").fadeOut('slow', function() { $(this).remove(); });
-	
-
 	$(document).ready(function () {
 		$(".kwicks").kwicks({
 		    maxSize : 200,
@@ -976,24 +972,57 @@ module.exports = function () {
 		    behavior: 'menu'
 		});
 
+		var backToTop = $(".back-to-top"),
+			topMenuWrapper = $(".top-menu-wrapper"),
+			welcomeTitle = $("#welcome-title-container"),
+			collapsed = false;
+
+		$(window).scroll(function () {
+			var scrollTop = $(this).scrollTop();
+
+			if (scrollTop > 400) {
+				backToTop.fadeIn();
+			} else {
+				backToTop.fadeOut();
+			}
+
+			if (!collapsed && scrollTop > welcomeTitle.offset().top - 200 + welcomeTitle.outerHeight()) {
+				topMenuWrapper.addClass("collapsed");
+				collapsed = true;
+			}
+
+			if (collapsed && scrollTop < 60) {
+				topMenuWrapper.removeClass("collapsed");
+				collapsed = false;
+			}
+		});
+
+		backToTop.click(function () {
+			$("html, body").animate({scrollTop: 0}, 800);
+			return false;
+		});
+
 		$(".kwicks .active-panel").click();
 
+		$(".kwicks li").click(function (e) {
+			var id = e.currentTarget.id;
+
+			if (id === "garage-chip-panel") {
+				window.location.href = "garage-polyaspartic-chip-coating.html";
+			} else if ( id === "grind-panel") {
+				window.location.href = "grind-polished-concrete.html";
+			} else if ( id === "epoxy-panel") {
+				window.location.href = "decorative-epoxy.html";
+			} else if ( id === "driveway-stairs-panel") {
+				window.location.href = "driveway-stair-coating.html";
+			} else {
+				window.location.href = "commercial-flooring.html";
+			}
+		});
+
 		$(".swipebox").swipebox();
+		$("#preloader").fadeOut('slow', function() { $(this).remove(); });
 	});
-
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 400) {
-			$(".back-to-top").fadeIn();
-		} else {
-			$(".back-to-top").fadeOut();
-		}
-	});
-
-	$(".back-to-top").click(function () {
-		$("html, body").animate({scrollTop: 0}, 800);
-		return false;
-	});
-	
 }();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
