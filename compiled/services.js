@@ -986,7 +986,7 @@ module.exports = function () {
 				backToTop.fadeOut();
 			}
 
-			if (!collapsed && scrollTop > welcomeTitle.offset().top - 200 + welcomeTitle.outerHeight()) {
+			if (!collapsed && scrollTop > 60) {
 				topMenuWrapper.addClass("collapsed");
 				collapsed = true;
 			}
