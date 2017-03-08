@@ -1257,18 +1257,24 @@ exports.logger = _logger2['default'];
 
 var Handlebars = __webpack_require__(23);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {};
 
   return "			<li class=\"service-list-header\"><span>"
     + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "</span></li>\n\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"2":function(container,depth0,helpers,partials,data) {
-    return "				<li class=\"service-list-item\">"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"2":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1;
+
+  return "				<li class=\"service-list-item "
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depths[1] != null ? depths[1].benefit : depths[1]),{"name":"if","hash":{},"fn":container.program(3, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "</li>\n";
-},"4":function(container,depth0,helpers,partials,data,blockParams,depths) {
+},"3":function(container,depth0,helpers,partials,data) {
+    return "benefit";
+},"5":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var helper, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : {}, alias4=helpers.helperMissing, alias5="function";
 
   return "			<a href=\""
@@ -1292,7 +1298,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + "	</ul>\n</div>\n\n<div class=\"col-xs-6\">\n	<div class=\"portfolio-title\">\n		<span>Recent "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + " Jobs</span>\n	</div>\n\n	<br />\n\n	<div class=\"click-hint\">\n		<span>Hint: Click on a picture for a full screen view</span>\n	</div>\n\n	<div class=\"portfolio-items\">\n\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.pictures : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.pictures : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</div>\n\n	<br />\n\n	<div class=\"contact-us-row\">\n		<a class=\"contact-us-button\" href=\"contact-us.html\">Contact us to book your appointment</a>\n	</div>\n</div>\n";
 },"useData":true,"useDepths":true});
 
@@ -2258,6 +2264,7 @@ module.exports = {
 		},
 		{
 			"name": "Benefits",
+			"benefit": true,
 			"items": [
 				"Easy to clean, seamless surface: Our polyaspartic floor coatings offers durable, seamless surfaces that can easily be wiped clean with very little upkeep.",
 				"Chemically Resistant: Our floor coatings are chemically resistant for all commercial flooring purposes.",

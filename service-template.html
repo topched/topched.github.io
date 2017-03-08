@@ -9,7 +9,7 @@
 			<li class="service-list-header"><span>{{name}}</span></li>
 
 			{{#each items}}
-				<li class="service-list-item">{{this}}</li>
+				<li class="service-list-item {{#if ../benefit}}benefit{{/if}}">{{this}}</li>
 			{{/each}}
 		{{/each}}
 	</ul>
