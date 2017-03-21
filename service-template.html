@@ -5,14 +5,33 @@
 <div class="col-xs-6">
 
 	<ul class="service-list">
-		{{#each services}}
-			<li class="service-list-header"><span>{{name}}</span></li>
-
-			{{#each items}}
-				<li class="service-list-item {{#if ../benefit}}benefit{{/if}}">{{this}}</li>
-			{{/each}}
+		<li class="service-list-header"><span>Benefits</span>
+		{{#each benefits}}
+			<li class="service-list-item benefit">
+				<span>{{benefit}}:</span> {{description}}
+			</li>
 		{{/each}}
 	</ul>
+
+	<ul class="service-list">
+		<li class="service-list-header"><span>Typical Applications</span>
+		<li class="service-list-item">
+			{{applications}}
+		</li>
+	</ul>
+
+	<ul class="service-list learn-more-content">
+		<li class="service-list-header"><span>Product Info</span></li>
+		<li class="service-list-item">{{info}}</li>
+
+		<li class="service-list-header"><span>What We Do</span></li>
+		<li class="service-list-item">{{process}}</li>
+	</ul>
+
+	<div class="toggle-learn-more">
+		<span>Learn more...</span>
+	</div>
+
 </div>
 
 <div class="col-xs-6">

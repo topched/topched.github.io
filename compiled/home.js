@@ -1,74 +1,35 @@
 webpackJsonp([6],{
 
-/***/ 36:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(7);
-__webpack_require__(6);
+var nav = __webpack_require__(4);
+var borderMenu = __webpack_require__(3);
+var navTemplate = __webpack_require__(6);
+var footerTemplate = __webpack_require__(5);
 
 module.exports = function () {
 
 	$(document).ready(function () {
-		$(".kwicks").kwicks({
-		    maxSize : 200,
-		    spacing : 5,
-		    behavior: 'menu'
-		});
+		var navDiv = document.createElement("div");
+		navDiv.innerHTML = navTemplate();
+		$("nav").append(navDiv);
 
-		var backToTop = $(".back-to-top"),
-			topMenuWrapper = $(".top-menu-wrapper"),
-			welcomeTitle = $("#welcome-title-container"),
-			collapsed = false;
+		var footerDiv = document.createElement("div");
+		footerDiv.innerHTML = footerTemplate();
+		$("footer").append(footerDiv);
 
-		$(window).scroll(function () {
-			var scrollTop = $(this).scrollTop();
-
-			if (scrollTop > 400) {
-				backToTop.fadeIn();
-			} else {
-				backToTop.fadeOut();
-			}
-
-			if (!collapsed && scrollTop > 60) {
-				topMenuWrapper.addClass("collapsed");
-				collapsed = true;
-			}
-
-			if (collapsed && scrollTop < 60) {
-				topMenuWrapper.removeClass("collapsed");
-				collapsed = false;
-			}
-		});
-
-		backToTop.click(function () {
-			$("html, body").animate({scrollTop: 0}, 800);
-			return false;
-		});
-
-		$(".kwicks li").click(function (e) {
-			var id = e.currentTarget.id;
-
-			if (id === "garage-chip-panel") {
-				window.location.href = "garage-polyaspartic-chip-coating.html";
-			} else if ( id === "grind-panel") {
-				window.location.href = "grind-polished-concrete.html";
-			} else if ( id === "epoxy-panel") {
-				window.location.href = "decorative-epoxy.html";
-			} else if ( id === "driveway-stairs-panel") {
-				window.location.href = "driveway-stair-coating.html";
-			} else {
-				window.location.href = "commercial-flooring.html";
-			}
-		});
+		nav.init();
+		borderMenu.init();
 
 		$("#preloader").fadeOut('slow', function() { $(this).remove(); });
 	});
 }();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
 
-},[36]);
+},[40]);
