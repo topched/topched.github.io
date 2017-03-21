@@ -1255,6 +1255,9 @@ $(document).ready(function () {
 	services.init();
 
 	$(".swipebox").swipebox();
+});
+
+$(window).load(function () {
 	$("#preloader").fadeOut('slow', function() { $(this).remove(); });
 });
 
