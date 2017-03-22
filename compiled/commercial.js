@@ -1144,7 +1144,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+/* WEBPACK VAR INJECTION */(function(jQuery) {
 
 __webpack_require__(1);
 var services = __webpack_require__(17);
@@ -1155,7 +1155,11 @@ var footerTemplate = __webpack_require__(5);
 var template = __webpack_require__(2);
 var serviceData = __webpack_require__(11);
 
-$(document).ready(function () {
+(function ($) {
+	var div = document.createElement("div");
+	div.innerHTML = template(serviceData);
+	$(".content").append(div);
+
 	var navDiv = document.createElement("div");
 	navDiv.innerHTML = navTemplate({
 		commercial: true
@@ -1166,17 +1170,15 @@ $(document).ready(function () {
 	footerDiv.innerHTML = footerTemplate();
 	$("footer").append(footerDiv);
 
-    var div = document.createElement("div");
-    div.innerHTML = template(serviceData);
-    $(".content").append(div);
-
-    nav.init();
-    borderMenu.init();
-    services.init();
+	nav.init();
+	borderMenu.init();
+	services.init();
 
 	$(".swipebox").swipebox();
-	$("#preloader").fadeOut('slow', function() { $(this).remove(); });
-});
+	$(window).on("load", function () {
+		$("#preloader").fadeOut('slow', function() { $(this).remove(); });
+	});
+})(jQuery);
 
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

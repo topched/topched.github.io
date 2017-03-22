@@ -1224,7 +1224,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+/* WEBPACK VAR INJECTION */(function(jQuery) {
 
 __webpack_require__(1);
 var services = __webpack_require__(17);
@@ -1235,7 +1235,7 @@ var serviceData = __webpack_require__(14);
 var navTemplate = __webpack_require__(6);
 var footerTemplate = __webpack_require__(5);
 
-$(document).ready(function () {
+(function ($) {
 	var div = document.createElement("div");
 	div.innerHTML = template(serviceData);
 	$(".content").append(div);
@@ -1255,11 +1255,12 @@ $(document).ready(function () {
 	services.init();
 
 	$(".swipebox").swipebox();
-
-	setTimeout(function () {
+	$(window).on("load", function () {
 		$("#preloader").fadeOut('slow', function() { $(this).remove(); });
-	}, 1000);
-});
+	});
+})(jQuery);
+
+
 
 
 
