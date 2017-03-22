@@ -1236,6 +1236,10 @@ var navTemplate = __webpack_require__(6);
 var footerTemplate = __webpack_require__(5);
 
 $(document).ready(function () {
+	var div = document.createElement("div");
+	div.innerHTML = template(serviceData);
+	$(".content").append(div);
+
 	var navDiv = document.createElement("div");
 	navDiv.innerHTML = navTemplate({
 		garage: true
@@ -1246,20 +1250,17 @@ $(document).ready(function () {
 	footerDiv.innerHTML = footerTemplate();
 	$("footer").append(footerDiv);
 
-	var div = document.createElement("div");
-	div.innerHTML = template(serviceData);
-	$(".content").append(div);
-
 	nav.init();
 	borderMenu.init();
 	services.init();
 
 	$(".swipebox").swipebox();
+
+	setTimeout(function () {
+		$("#preloader").fadeOut('slow', function() { $(this).remove(); });
+	}, 1000);
 });
 
-$(window).load(function () {
-	$("#preloader").fadeOut('slow', function() { $(this).remove(); });
-});
 
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

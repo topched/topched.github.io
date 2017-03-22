@@ -1196,6 +1196,10 @@ var template = __webpack_require__(2);
 var serviceData = __webpack_require__(12);
 
 $(document).ready(function () {
+	var div = document.createElement("div");
+	div.innerHTML = template(serviceData);
+	$(".content").append(div);
+
 	var navDiv = document.createElement("div");
 	navDiv.innerHTML = navTemplate({
 		driveway: true
@@ -1205,10 +1209,6 @@ $(document).ready(function () {
 	var footerDiv = document.createElement("div");
 	footerDiv.innerHTML = footerTemplate();
 	$("footer").append(footerDiv);
-
-    var div = document.createElement("div");
-    div.innerHTML = template(serviceData);
-    $(".content").append(div);
 
     nav.init();
     borderMenu.init();
